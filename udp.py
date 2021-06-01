@@ -4,7 +4,7 @@ port=43210
 obj_socket=socket(AF_INET, SOCK_DGRAM)
 obj_socket.connect((server,port))
 exit=''
-while exit=!'X':
+while exit!='X':
 	msg=input('Insert a message: ')
 	obj_socket.sendto(msg.encode(), (server,port))
 	data, origin = obj_socket.recvfrom(65535)
