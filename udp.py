@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 from socket import *
 server='127.0.0.1'
 port=43210
@@ -13,6 +14,8 @@ while exit!='X':
 	exit=input("Type in 'X' to exit: ").upper()
 obj_socket.close()
 =======
+=======
+>>>>>>> origin/main
 from socket import *
 server='127.0.0.1'
 port=43210
@@ -26,4 +29,7 @@ while exit!='X':
 	print("Server's answer: ",data.decode())
 	exit=input("Type in 'X' to exit: ").upper()
 obj_socket.close()
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
